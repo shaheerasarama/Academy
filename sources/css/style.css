@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --mainColor: #9e5cf2;
+  --blackColor: #3e3232;
+  --whiteColor: #ffffff;
+  --darkColor: #080808;
+  --secondaryColor: #ff991f;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+}
+ul {
+  list-style: none;
+}
+.heading {
+  position: relative;
+}
+.heading::after {
+  content: "";
+  position: absolute;
+  width: 45%;
+  height: 3px;
+  background-color: var(--secondaryColor);
+  display: block;
+  border-radius: 25px;
+  margin-top: 3px;
+}
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 300px;
+}
+.btn-hovered-blue {
+  transition: all 0.5s;
+}
+.btn-hovered-blue:hover {
+  background-color: var(--mainColor);
+  border-color: var(--mainColor);
+}
+.btn-hovered-yellow {
+  transition: all 0.5s;
+}
+.btn-hovered-yellow:hover {
+  background-color: var(--secondaryColor) !important;
+  border-color: var(--secondaryColor);
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: var(--darkColor);
+  opacity: 50%;
+}
+.home {
+  background-color: #f2f2f2;
+}
+.home p {
+  font-size: 24px;
+}
+.home span,
+.courses span,
+.instructors span {
+  color: var(--mainColor);
+}
+.courses input {
+  background-color: #fafafa;
+  font-family: "Rubik", sans-serif;
+}
+.courses-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  column-gap: 1rem;
+}
+.course-box {
+  background-color: #fafafa;
+  margin-bottom: 1rem;
+}
+.courses .course-box ul li i {
+  color: var(--darkColor);
+  opacity: 25%;
+}
+.courses .course-box ul span {
+  color: var(--darkColor);
+  opacity: 75%;
+}
+.course-box h3 {
+  font-size: 16px;
+}
+.course-box .explore-course i {
+  color: var(--secondaryColor);
+}
+.instructors {
+  background-color: #f2f2f2;
+}
+.instructors ul li:nth-child(2) {
+  color: #3e3232;
+  opacity: 75%;
+}
+.newsletter p span {
+  color: #5a69f2;
+}
+footer h4 {
+  color: var(--secondaryColor);
+}
+footer h5 {
+  color: var(--secondaryColor);
+}
